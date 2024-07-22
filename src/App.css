@@ -1,3 +1,6 @@
+/* App.css */
+
+/* Estilos generales */
 .app {
   margin: 0;
   padding: 0;
@@ -5,16 +8,36 @@
   height: 100%;
   max-width: 100vw;
   max-height: auto;
+  overflow: hidden; /* Evita el desplazamiento de la app en la vista móvil */
+  position: relative; /* Para permitir que los elementos se posicionen relativamente */
 }
 
 .background {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
-  /*position: absolute; Para que la imagen de fondo permanezca fija mientras se desplaza */
   top: 0;
   left: 0;
+  z-index: -1; /* Mantiene la imagen de fondo detrás del contenido */
 }
 
+.background-fixed {
+  position: fixed; /* Fija la imagen de fondo en pantallas pequeñas */
+}
 
+/* Estilos para pantallas grandes */
 
+.menu {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  overflow-y: auto; /* Permite el desplazamiento vertical del menú */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  position: relative;
+  z-index: 1; /* Asegura que el menú esté por delante de la imagen de fondo */
+}
+
+.menu img {
+  width: 100%; /* Asegura que la imagen del menú ocupe el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
