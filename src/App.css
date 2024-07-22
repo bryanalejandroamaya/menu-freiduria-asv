@@ -1,0 +1,20 @@
+.app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: auto;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  /*position: absolute; Para que la imagen de fondo permanezca fija mientras se desplaza */
+  top: 0;
+  left: 0;
+}
+
+
+
